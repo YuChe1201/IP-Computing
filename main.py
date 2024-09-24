@@ -8,3 +8,4 @@ mask = int(input('/'))
 if mask >= 24:
     n = int(math.pow(2,32-mask))
     print(n)
+    print(d/n)
