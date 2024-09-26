@@ -70,7 +70,6 @@ def class_A(a1,b1,c1,d1):
     return(ans)
 import math
 a,b,c,d = map(int,input().split('.'))
-print(a,b,c,d)
 mask = int(input('/'))
 #p = input('切第幾段：')
 #o = input('取第幾段：')
