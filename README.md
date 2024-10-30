@@ -6,5 +6,5 @@ This is a library used for calculating IP addresses.
 Import all functions from IPCalculator in your main program:
 ```python
 from IPCalculator import *
-result = CalculateIP  # Use the CalculateIP method
+result = CalculateIP()  # Use the CalculateIP method
 print(result)
