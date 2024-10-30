@@ -1,7 +1,7 @@
 import math
 def CalculateIP():
     global a,b,c,d,mask,p,o,ip
-    a,b,c,d = map(str,input().split('.'))
+    a,b,c,d = map(str,input("輸入IP：").split('.'))
     mask = int(input('/'))
     p = input('切第幾段：')
     if p:
@@ -13,31 +13,31 @@ def CalculateIP():
     if mask >= 24:
         if p == '':
             if d == 'x':
-                print(class_D_2(a,b,c,d))
-            else:print(class_D(a,b,c,d))
+                return(class_D_2(a,b,c,d))
+            else:return(class_D(a,b,c,d))
         else:
-            print(class_D_3(a,b,c,d))
+            return(class_D_3(a,b,c,d))
     elif mask >= 16:
         if p == '':
             if c == 'x':
-                print(class_C_2(a,b,c,d))
-            else:print(class_C(a,b,c,d))
+                return(class_C_2(a,b,c,d))
+            else:return(class_C(a,b,c,d))
         else:
-            print(class_C_3(a,b,c,d))
+            return(class_C_3(a,b,c,d))
     elif mask >= 8:
         if p == '':
             if b == 'x':
-                print(class_B_2(a,b,c,d))
-            else:print(class_B(a,b,c,d))
+                return(class_B_2(a,b,c,d))
+            else:return(class_B(a,b,c,d))
         else:
-            print(class_B_3(a,b,c,d))
+            return(class_B_3(a,b,c,d))
     elif mask >= 0:
         if p == '':
             if a == 'x':
-                print(class_A_2(a,b,c,d))
-            else:print(class_A(a,b,c,d))
+                return(class_A_2(a,b,c,d))
+            else:return(class_A(a,b,c,d))
         else:
-            print(class_A_3(a,b,c,d))
+            return(class_A_3(a,b,c,d))
 def Carry(a1,b1,c1,d1):
     while d1 > 255 :
         c1 = c1 + 1
